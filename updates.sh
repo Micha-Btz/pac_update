@@ -12,3 +12,8 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_av refs/c
 #Fixes secondary mic on semc devices
 cd ${android}/hardware/qcom/audio-caf
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/35/53435/5 && git checkout FETCH_HEAD
+
+#mdpi: Override only the required dimensions
+cd ${android}/frameworks/base
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/53/54753/1 && git checkout FETCH_HEAD
+
